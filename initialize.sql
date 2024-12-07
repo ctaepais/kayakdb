@@ -32,3 +32,52 @@ CREATE TYPE Service_Type AS ENUM('airline', 'rentalCar', 'hotel');
 
 \copy Returns(searchID, listingID) FROM data/returns.csv header csv;
 \copy Review(reviewID, postDate, rating, comment, listingID, userID) FROM data/review.csv header csv;
+
+-- Functions
+
+-- Calculate and update provider rating
+CREATE OR REPLACE FUNCTION update_ratings()
+RETURNS trigger
+LANGUAGE plpgsql AS
+$$
+DECLARE
+    listing_id INT;
+BEGIN
+    -- check operation
+    IF (TG_OP = 'DELETE') THEN
+        listing_id = OLD.listingid;
+    ELSE
+        listing_id = NEW.listingid;
+    END IF;
+
+    -- update rating of travel service
+    UPDATE Travel_Service
+       SET reviewrating = (
+           SELECT ROUND(AVG(rating), 2)
+             FROM Review
+            WHERE listingid = listing_id
+       )
+     WHERE listingid = listing_id
+
+    -- update rating of service provider
+    UPDATE Service_Provider
+       SET reviewRating = (
+           SELECT ROUND(AVG(r.rating), 2)
+             FROM Review r
+                  JOIN Travel_Service t ON r.listingid = t.listingid
+            WHERE listingid = listing_id
+       )
+      WHERE providerid = (
+        SELECT providerid
+          FROM Travel_Service
+         WHERE listingid = listing_id
+      )
+      RETURN NEW;
+END
+$$;
+
+-- Trigger to update provider rating upon new/updated/deleted review
+CREATE TRIGGER new_review_rating_trigger
+AFTER INSERT OR UPDATE OR DELETE ON Review
+FOR EACH ROW
+EXECUTE FUNCTION update_provider_rating();
