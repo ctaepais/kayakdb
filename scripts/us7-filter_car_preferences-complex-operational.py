@@ -17,18 +17,21 @@ def filter_car_preferences(userID):
     print(us)
     
     user_check_query = '''
-        SELECT homecity, preferredcarbrand
+        SELECT name, homecity, preferredcarbrand
           FROM Registered_User
          WHERE userid = %s
     '''
     cmd = cur.mogrify(user_check_query, (userID,))
     cur.execute(cmd)
-    preferences = cur.fetchall()
+    userpref = cur.fetchall()
 
-    if not preferences:
+    if not userpref:
         print("Invalid user ID.")
         return
     
+    cols = "name, homecity, preferredcarbrand"
+    print("User Car Preferences")
+    show_table(userpref, cols)
 
     rental_query = '''
         SELECT c.brand, c.modelname, t.startdate, t.enddate, t.price, c.pickuplocation
@@ -39,7 +42,7 @@ def filter_car_preferences(userID):
                AND t.startdate >= current_date
          ORDER BY startdate ASC
     '''
-    cmd = cur.mogrify(rental_query, (preferences[0][0], preferences[0][1],))
+    cmd = cur.mogrify(rental_query, (userpref[0][1], userpref[0][2],))
     cur.execute(cmd)
     rows = cur.fetchall()
 
