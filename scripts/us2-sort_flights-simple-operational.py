@@ -10,8 +10,8 @@ def sort_flights(departureAirport):
     I want:  To view flight options sorted by price
     So That:  I can find flights that fit my budget
 
-    Case: Sort flights by price from LAX
-    Function Call: sort_flights('LAX')
+    Case: Sort flights by price from DFW
+    Function Call: sort_flights('DFW')
     '''
     # for the sake of having data, I am just passsing the departureAirport as a parameter, and not dealing with dates & arrivals
     # the US does not explicitly state if its for a specific trip - so this is just flights from the selected airport by price
@@ -41,4 +41,4 @@ def sort_flights(departureAirport):
     print("Flights")
     show_table(rows, cols)
 
-sort_flights('LAX')
+sort_flights('DFW')
