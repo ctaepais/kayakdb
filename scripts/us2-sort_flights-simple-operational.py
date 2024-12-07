@@ -22,7 +22,10 @@ def sort_flights(departureAirport):
           FROM Flight1 AS f
           JOIN Flight2 f2 ON f.flightNumber = f2.flightNumber
           JOIN Travel_Service t ON t.listingID = f.listingID
+          JOIN Service_Provider s ON t.providerID = s.providerID
          WHERE f.departureAirport = %s
+               AND s.currentPartner = TRUE
+               AND t.available = TRUE
          ORDER BY price ASC
     '''
     print()
