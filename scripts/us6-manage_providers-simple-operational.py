@@ -6,20 +6,22 @@ def manage_providers(providerID):
     * US6: 
     Type: Simple + Operational
 
-    As a:  Administrator
+    As an:  Administrator
     I want:  To change the partnered status of service providers
     So That:  The platform reflects the current status of service providers
 
+    Case: Change the partnered status of provider with ID 9
+    Function Call: manage_providers(9)
     '''
     
     print(us)
     
-    cols = 'providerID, name, type, currentPartner'
+    cols = 'providerID name type currentPartner'
     
     table = '''
         SELECT providerID, name, type, currentPartner
-        FROM Service_Provider
-        ORDER BY providerID
+          FROM Service_Provider
+         ORDER BY providerID
     '''
 
     # print original table
@@ -38,8 +40,8 @@ def manage_providers(providerID):
     
     query = '''
         UPDATE Service_Provider
-        SET currentPartner = NOT currentPartner
-        WHERE providerID = %s
+           SET currentPartner = NOT currentPartner
+         WHERE providerID = %s
     '''
     cmd = cur.mogrify(query, (providerID,))
     cur.execute(cmd)
