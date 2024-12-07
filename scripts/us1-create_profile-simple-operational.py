@@ -9,11 +9,14 @@ def create_profile(userID, email, phoneNumber, password, name, homeCity, preferr
     As a:  Traveler
     I want:  To create a profile
     So That:  I can save personal information, travel preferences, and bookmarked services
+
+    Case: Create a new profile for Edward
+    Function Call: create_profile(21, "user11@gmail.com", 1234567999, "pass11", "Edward", "Pittsburgh", "Jet Blue", "Economy", "Toyota")
     '''
     
     print(us)
     
-    cols = 'userID, email, phoneNumber, password, name, homeCity, preferredAirline, preferredClass, preferredCarBrand'
+    cols = 'userID email phoneNumber password name homeCity preferredAirline preferredClass preferredCarBrand'
     
     table = '''
         SELECT *
@@ -60,4 +63,4 @@ def create_profile(userID, email, phoneNumber, password, name, homeCity, preferr
     print("Registered User")
     show_table(rows, cols) 
         
-create_profile(21, "user11@gmail.com", 1234567999, "pass11", "Edward", "Pittsburgh", "Jet Blue", "First", "Toyota")
+create_profile(21, "user11@gmail.com", 1234567999, "pass11", "Edward", "Pittsburgh", "Jet Blue", "Economy", "Toyota")
