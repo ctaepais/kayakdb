@@ -31,9 +31,23 @@ def create_profile(userID, email, phoneNumber, password, name, homeCity, preferr
     print("Registered User Table Initial") 
     show_table(rows, cols) 
     
+
+    # Check if userID already exists
+    check_query = '''
+        SELECT userID
+        FROM Registered_User
+        WHERE userID = %s
+    '''
+    cmd = cur.mogrify(check_query, (userID,))
+    cur.execute(cmd)
+    existing_user = cur.fetchone()
+
+    if existing_user:
+        print(f"UserID {userID} already exists. Please use a different UserID.")
+        return
+
     print("Inserting new user to Users table, UserID: ", userID)
     print()
-
     # Insert into User table first
     user_query = '''
         INSERT INTO Users(userID)
@@ -63,4 +77,4 @@ def create_profile(userID, email, phoneNumber, password, name, homeCity, preferr
     print("Registered User")
     show_table(rows, cols) 
         
-create_profile(21, "user11@gmail.com", 1234567999, "pass11", "Edward", "Pittsburgh", "Jet Blue", "Economy", "Toyota")
+create_profile(21, "user21@newUser.com", 1234567999, "pass11", "Edward", "Pittsburgh", "Jet Blue", "Economy", "Toyota")
