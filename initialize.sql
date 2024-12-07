@@ -71,7 +71,7 @@ BEGIN
         SELECT providerid
           FROM Travel_Service
          WHERE listingid = listing_id
-      )
+      );
       RETURN NEW;
 END
 $$;
