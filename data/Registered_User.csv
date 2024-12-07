@@ -1,6 +1,6 @@
 userID,email,phoneNumber,password,name,homeCity,preferredAirline,preferredClass,preferredCarBrand
 2,user1@example.com,1234567890,pass1,Alice,New York,Delta,Economy,Toyota
-3,user2@example.com,1234567891,pass2,Bob,Los Angeles,Jet Blue,Business,Honda
+3,user2@example.com,1234567891,pass2,Bob,Los Angeles,Jet Blue,Business,Ford
 6,user3@example.com,1234567892,pass3,Charlie,Chicago,United,Economy,Ford
 7,user4@example.com,1234567893,pass4,Diana,Houston,Southwest,First,Tesla
 8,user5@example.com,1234567894,pass5,Eve,Phoenix,American,Economy,Chevrolet

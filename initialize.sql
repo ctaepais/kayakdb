@@ -1,6 +1,3 @@
--- terminal command
--- psql -U isdb -d postgres -f initialize.sql
-
 -- drop the kayak database if it exists
 DROP database if EXISTS kayak;
 
