@@ -20,7 +20,9 @@ def print_table(table_name):
           FROM {}
          LIMIT 10
     '''.format(table)
-    
+
+    # limiting to 10 here since we have a lot of example data that was needed, but would be too much to print
+
     cmd = cur.mogrify(query, (table,))
     cur.execute(cmd)
     rows = cur.fetchall()
