@@ -3,15 +3,15 @@ from common import *
 def write_review(userID, listingID, rating, comment):
     
     us = '''
-    US3: Set Price Alert
+    US3: Update Review Rating
     Type: Complex + Operational
     
-    As a: Traveler
-    I want: Set a price alert for flights
-    So that: I am notified when the fare drops to my desired price
+    As a: Administrator
+    I want: Automatically update service and provider ratings when reviews are made or deleted
+    So that: Users always see accurate review ratings for services
     
-    Case: Send a notification once the price of flight with listingID 4 drops below $1000
-    Function Call: filter_car_preferences(4, 1000)
+    Case: Update review rating of travel service and provider when a 5 star review is written for listingID 1 by userID 1
+    Function Call: write_review(1, 1, 5, "Test Review")
     '''
     
     listingrating = '''
@@ -68,5 +68,5 @@ def write_review(userID, listingID, rating, comment):
     
     return
     
-write_review(1, 1, 5, "Test Review")
+write_review(1, 1, 5, "Awesome Sauce")
     
