@@ -80,4 +80,4 @@ $$;
 CREATE TRIGGER new_review_rating_trigger
 AFTER INSERT OR UPDATE OR DELETE ON Review
 FOR EACH ROW
-EXECUTE FUNCTION update_provider_rating();
+EXECUTE FUNCTION update_ratings();
