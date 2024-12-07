@@ -30,7 +30,7 @@ def total_carbon_footprint(providerID, year):
     cur.execute(cmd)
     rows = cur.fetchall()
     print("Carbon Emissions")
-    show_table( rows, cols) 
+    show_table(rows, cols) 
     
     return
 

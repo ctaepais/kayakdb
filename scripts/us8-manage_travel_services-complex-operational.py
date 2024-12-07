@@ -29,7 +29,7 @@ def update_service_availability(status, id):
     cur.execute(cmd)
     rows = cur.fetchall()
     print("Travel Service")
-    show_table( rows, cols) 
+    show_table(rows, cols) 
     
     query = f'''
         UPDATE Travel_Service
@@ -46,6 +46,6 @@ def update_service_availability(status, id):
     cur.execute(cmd)
     rows = cur.fetchall()
     print("Updated Travel Service")
-    show_table( rows, cols) 
+    show_table(rows, cols) 
 
 update_service_availability(False, 1)
