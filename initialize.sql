@@ -57,7 +57,7 @@ BEGIN
              FROM Review
             WHERE listingid = listing_id
        )
-     WHERE listingid = listing_id
+     WHERE listingid = listing_id;
 
     -- update rating of service provider
     UPDATE Service_Provider
