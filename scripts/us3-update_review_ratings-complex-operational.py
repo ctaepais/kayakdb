@@ -11,7 +11,7 @@ def write_review(userID, listingID, rating, comment):
     So that: Users always see accurate review ratings for services
     
     Case: Update review rating of travel service and provider when a 5 star review is written for listingID 1 by userID 1
-    Function Call: write_review(1, 1, 5, "Test Review")
+    Function Call: write_review(1, 1, 5, "Awesome Sauce")
     '''
     
     listingrating = '''
