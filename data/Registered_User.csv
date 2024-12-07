@@ -1,0 +1,11 @@
+userID,email,phoneNumber,password,name,homeCity,preferredAirline,preferredClass,preferredCarBrand
+2,user1@example.com,1234567890,pass1,Alice,New York,Delta,Economy,Toyota
+3,user2@example.com,1234567891,pass2,Bob,Los Angeles,Jet Blue,Business,Honda
+6,user3@example.com,1234567892,pass3,Charlie,Chicago,United,Economy,Ford
+7,user4@example.com,1234567893,pass4,Diana,Houston,Southwest,First,Tesla
+8,user5@example.com,1234567894,pass5,Eve,Phoenix,American,Economy,Chevrolet
+12,user6@example.com,1234567895,pass6,Frank,Philadelphia,British Airways,Economy,Nissan
+13,user7@example.com,1234567896,pass7,Grace,San Antonio,Lufthansa,Business,BMW
+14,user8@example.com,1234567897,pass8,Hank,San Diego,Emirates,First,Mercedes
+18,user9@example.com,1234567898,pass9,Ivy,Dallas,Qatar Airways,Economy,Audi
+19,user10@example.com,1234567899,pass10,Jack,San Jose,Singapore Airlines,Business,Volkswagen

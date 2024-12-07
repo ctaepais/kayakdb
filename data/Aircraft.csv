@@ -1,0 +1,11 @@
+aircraftID,model,age,seatingCapacity,amenities,entertainmentSystems
+1,Boeing 737,12,180,"WiFi, Entertainment",Yes
+2,Airbus A320,8,150,"WiFi, Extra Legroom",Yes
+3,Boeing 777,6,350,"WiFi, USB Chargers",Yes
+4,Airbus A380,10,800,"WiFi, Entertainment, Lounge",Yes
+5,Boeing 787,5,290,"WiFi, USB Chargers",Yes
+6,Airbus A350,3,300,"WiFi, Entertainment",Yes
+7,Embraer E190,15,100,"WiFi, Snacks",No
+8,Bombardier CRJ700,20,78,None,No
+9,Boeing 747,25,410,"WiFi, Entertainment, Lounge",Yes
+10,Airbus A220,4,125,"WiFi, Extra Legroom",Yes

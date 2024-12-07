@@ -1,0 +1,51 @@
+listingID,brand,modelName,rentalCompany,modelYear,pickupLocation
+4,BMW,Model 3,Budget,2018,Airport New York
+34,Mercedes,X5,Budget,2017,Suburb Sydney
+147,Honda,Camry,National,2016,Airport London
+73,Tesla,A4,Budget,2020,Downtown Paris
+90,Ford,C-Class,National,2016,Downtown Los Angeles
+14,Nissan,X5,Budget,2016,Airport Tokyo
+10,Subaru,X5,National,2020,Downtown Sydney
+11,Toyota,F-150,Hertz,2022,Downtown Tokyo
+20,Toyota,X5,Avis,2022,Downtown Sydney
+119,Mercedes,Civic,Hertz,2017,Downtown Tokyo
+28,Ford,A4,Budget,2016,Downtown Paris
+31,Ford,Civic,Enterprise,2022,Suburb New York
+57,Audi,X5,Hertz,2017,Airport New York
+43,Audi,Camry,Enterprise,2023,Airport Sydney
+141,Mercedes,A4,Enterprise,2016,Airport New York
+120,Honda,Camry,Budget,2020,Suburb London
+104,Nissan,Altima,Avis,2023,Downtown Tokyo
+121,Tesla,Camry,Enterprise,2018,Downtown London
+134,Toyota,Silverado,National,2023,Downtown Paris
+101,Mercedes,Silverado,Hertz,2017,Downtown New York
+16,Mercedes,Civic,Hertz,2021,Airport Los Angeles
+65,Audi,Silverado,Budget,2015,Downtown Tokyo
+82,Ford,X5,Hertz,2016,Downtown Paris
+59,Ford,F-150,National,2020,Suburb Los Angeles
+48,Toyota,F-150,Avis,2018,Suburb Los Angeles
+87,Tesla,F-150,Budget,2019,Suburb Tokyo
+148,Mercedes,X5,National,2020,Downtown Tokyo
+70,Honda,A4,Enterprise,2017,Downtown Sydney
+125,Ford,C-Class,National,2020,Downtown London
+103,Nissan,X5,National,2020,Downtown Paris
+81,Mercedes,Outback,Budget,2016,Downtown London
+99,Chevrolet,Camry,Avis,2015,Airport Tokyo
+29,Nissan,Model 3,Enterprise,2016,Suburb London
+135,Toyota,X5,Enterprise,2021,Airport Paris
+24,Audi,Silverado,Budget,2017,Downtown London
+23,Tesla,Silverado,National,2018,Downtown Los Angeles
+117,Toyota,Camry,Hertz,2022,Downtown London
+69,Ford,C-Class,Avis,2021,Suburb Los Angeles
+38,BMW,Camry,Avis,2019,Downtown Tokyo
+42,Ford,Outback,National,2021,Downtown Tokyo
+109,Mercedes,A4,National,2015,Downtown Paris
+112,Toyota,C-Class,Avis,2022,Downtown Sydney
+108,Toyota,F-150,Hertz,2015,Airport Sydney
+25,Subaru,Outback,National,2022,Airport Los Angeles
+95,Mercedes,Outback,Enterprise,2020,Airport Paris
+123,BMW,C-Class,Hertz,2019,Airport Paris
+7,BMW,Camry,Enterprise,2023,Downtown Los Angeles
+30,Tesla,Model 3,Budget,2016,Downtown Paris
+80,Audi,Camry,Enterprise,2019,Downtown Sydney
+2,Toyota,C-Class,Enterprise,2017,Airport London

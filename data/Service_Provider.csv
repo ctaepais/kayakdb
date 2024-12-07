@@ -1,0 +1,11 @@
+providerID,name,type,contactInfo,currentPartner,reviewRating
+1,Hilton,hotel,hotels@hilton.com,1,4.00
+2,Delta,airline,flightInfo@delta.com,1,4.20
+3,Hertz,rentalCar,drive@hertz.com,1,3.80
+4,Marriot,hotel,stay@marriot.com,1,3.70
+5,Jet Blue,airline,sky@jetblue.com,1,4.60
+6,Avis,rentalCar,info@avis.com,1,4.10
+7,Airbnb,hotel,support@airbnb.com,1,4.50
+8,American Airlines,airline,contact@aa.com,1,4.30
+9,Budget,rentalCar,help@budget.com,0,4.00
+10,InterContinental,hotel,info@ihg.com,1,3.90
