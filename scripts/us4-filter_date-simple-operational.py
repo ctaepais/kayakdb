@@ -4,7 +4,7 @@ def filter_date(startDate, endDate):
     
     us='''
     * US4: Filter Date
-    Type: Simple + Operational
+    Type: Complex + Operational
     As a:  Traveler
     I want:  To filter search results for a rental car by a date range
     So That:  I can find car options available when I need them
