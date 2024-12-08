@@ -1,5 +1,5 @@
 -- Created by Vertabelo (http://vertabelo.com)
--- Last modification date: 2024-11-23 03:15:32.181
+-- Last modification date: 2024-12-07 22:55:48.585
 
 -- tables
 -- Table: Aircraft
@@ -130,7 +130,7 @@ CREATE TABLE Travel_Service (
 -- Table: Users
 CREATE TABLE Users (
     userID int  NOT NULL,
-    CONSTRAINT User_pk PRIMARY KEY (userID)
+    CONSTRAINT Users_pk PRIMARY KEY (userID)
 );
 
 -- foreign keys
