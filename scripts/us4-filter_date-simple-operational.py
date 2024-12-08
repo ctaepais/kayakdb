@@ -18,11 +18,11 @@ def filter_date(startDate, endDate):
     # for the sake of data availability, I am just using all locations
     # the US does not explicitly state if its for a specific trip - so this is just all available cars
 
-    cols = 'brand modelName modelYear rentalCompany startDate endDate price reviewRating'
+    cols = 'brand modelName modelYear rentalCompany startDate price reviewRating'
 
 
     table = '''
-        SELECT r.brand, r.modelName, r.modelYear, r.rentalCompany, t.startDate, t.endDate, t.price, t.reviewRating
+        SELECT r.brand, r.modelName, r.modelYear, r.rentalCompany, t.startDate, t.price, t.reviewRating
           FROM Rental_Car AS r
                JOIN Travel_Service AS t ON r.listingID = t.listingID
                JOIN Service_Provider AS s ON t.providerID = s.providerID
