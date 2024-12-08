@@ -65,7 +65,7 @@ BEGIN
            SELECT ROUND(AVG(r.rating), 2)
              FROM Review r
                   JOIN Travel_Service t ON r.listingid = t.listingid
-            WHERE listingid = listing_id
+            WHERE r.listingid = listing_id
        )
       WHERE providerid = (
         SELECT providerid

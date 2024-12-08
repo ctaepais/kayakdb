@@ -4,7 +4,7 @@ def update_service_availability(status, id):
     
     us='''
     US8: Manage Travel Services
-    Type: Complex + Operational
+    Type: Simple + Operational
 
     As a:  Service Provider
     I want:  To update and change the available inventory of services
