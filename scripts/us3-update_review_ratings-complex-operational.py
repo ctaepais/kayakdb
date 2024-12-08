@@ -26,6 +26,8 @@ def write_review(userID, listingID, rating, comment):
                JOIN Travel_Service t ON s.providerid = t.providerid
          WHERE t.listingid = %s
     '''
+
+    print(us)
     
     cmd = cur.mogrify(listingrating, (listingID,))
     cur.execute(cmd)

@@ -62,16 +62,14 @@ BEGIN
     -- update rating of service provider
     UPDATE Service_Provider
        SET reviewRating = (
-           SELECT ROUND(AVG(r.rating), 2)
-             FROM Review r
-                  JOIN Travel_Service t ON r.listingid = t.listingid
-            WHERE r.listingid = listing_id
-       )
-      WHERE providerid = (
-        SELECT providerid
-          FROM Travel_Service
-         WHERE listingid = listing_id
-      );
+           SELECT ROUND(AVG(reviewrating), 2)
+             FROM Travel_Service
+            WHERE providerid = (
+                SELECT providerid
+                  FROM Travel_Service
+                 WHERE listingid = listing_id
+            )
+       );
       RETURN NEW;
 END
 $$;
