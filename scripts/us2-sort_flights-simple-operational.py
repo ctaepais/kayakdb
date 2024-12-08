@@ -4,7 +4,7 @@ def sort_flights(departureAirport):
     
     us='''
     * US2: Sort Flights
-    Type: Simple + Operational
+    Type: Complex + Operational
 
     As a:  Traveler
     I want:  To view flight options sorted by price
